@@ -15,39 +15,12 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 const pressMe = () =>{
   Alert.alert("Peligro");
 }
-// const App = () => {
-//   return(
-//     <View style={styles.container}>
-//       <View style={styles.box1}>
-//         <View style={styles.box2}>
-//           <Text style={styles.text}>card1 </Text>
-//         </View>
-//         <View style={styles.box3}>
-//           <Button title="Press Me" onPress={pressMe}></Button>
-//           </View>  
-//       </View>
-//       <View style={styles.box4}>
-//         <View style={styles.box5}>
-//           <TouchableHighlight style={styles.touchButton} onPress={pre}>
-//             <Text>Click Me</Text>
-//           </TouchableHighlight>
-//         </View>
-//         <View style={styles.box6}></View>
-//       </View>
-//       <View style={styles.box7}>
-//         <View style={styles.box8}></View>
-//         <View style={styles.box9}></View>
-//       </View>
-//    </View>  
-//   );
-
-// }
 const App =() =>{
   return(
     <View style={styles.container}>
       <View style={styles.box10}>
         <Image source={require('./assets/cita.png')}></Image>
-        <Text style={{fontSize:20, color:"white", fontWeight:"bold"}}>AGENDA DE CITAS MEDICAS</Text>
+        <Text style={{fontSize:20, color:"white", fontWeight:"bold"}}>AGENDA DE CITAS MEDICAS </Text>
       </View>
       <View style={styles.box11}></View>
       <View style={styles.box12}></View>
