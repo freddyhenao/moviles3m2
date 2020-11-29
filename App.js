@@ -31,7 +31,6 @@ import {
   View, 
   StyleSheet, 
   Text, 
-  Button, 
   Alert, 
   TouchableHighlight, 
   Dimensions,
@@ -46,13 +45,19 @@ const App =() =>{
     <View style  ={styles.container}>
         <View style={styles.box1}>
           <Image source={require('./assets/cita.png')} style={{width:150}}></Image>
-          <Text style={{fontSize:20, color:"black"}}> Agenda de Citas Medicas </Text>
+          <Text style={{fontSize:30, color:"black"}}> Agenda de Citas Medicas </Text>
         </View>
         <View style={styles.box2}>
        
         </View>
         <View style={styles.box3}>
-        <Text>Agenda de Citas Medicas</Text>
+        {/* <Text>Agenda de Citas Medicas</Text> */}
+        <TouchableHighlight style={styles.touchButton} onPress={pressMe} >
+                <Text style={{fontSize:25, color: "white", fontWeight: "bold"}}> Agendar Cita </Text>
+            </TouchableHighlight>
+          <TouchableHighlight style={styles.touchButton1} onPress={pressMe} >
+                <Text style={{fontSize:25, color: "black", fontWeight: "bold"}}> Citas Programadas </Text>
+            </TouchableHighlight>
         </View>
         
 
@@ -77,13 +82,25 @@ const styles = StyleSheet.create({
     },
   box3:{
     width: Dimensions.get("screen").width*0.9,
-    height: Dimensions.get("screen").height*0.4,
+    height: Dimensions.get("screen").height*0.2,
     backgroundColor: "#b3e5fc",
     position: "absolute",
     left: Dimensions.get("screen").width*0.05,
     right: Dimensions.get("screen").width*0.05,
-    top: Dimensions.get("screen").width*1,
+    top: Dimensions.get("screen").width*0.8,
     borderRadius: 10,
+  },
+  touchButton:{
+    padding: 20,
+    backgroundColor: "#303f9f",
+    flexDirection: "row",
+    borderRadius: 10
+  },
+  touchButton1:{
+    padding: 20,
+    backgroundColor: "#607d8b",
+    flexDirection: "row",
+    borderRadius: 10
   }
 
 });
